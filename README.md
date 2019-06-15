@@ -11,20 +11,6 @@ Text classification is one of the most important tasks in Natural Language Proce
 
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
-
-#H1 header
-
-###Blockquotes
-
-
-###Links
-
-[Links](http://localhost/)
 
 ### importing library and initialisation
 
