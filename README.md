@@ -33,7 +33,6 @@ from nltk.corpus import stopwords
 movie_data = load_files("txt_sentoken")  
 X, y = movie_data.data, movie_data.target
 
-
 print(y) # listee all files data with labels class
 ```
 
