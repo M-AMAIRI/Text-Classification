@@ -38,7 +38,7 @@ print(y) # listee all files data with labels class
 ```
 
 
-####Text Preprocessing 
+#### Text Preprocessing 
 
 Once the dataset has been imported, the next step is to preprocess the text. Text may contain numbers, special characters,
 and unwanted spaces. Depending upon the problem we face, we may or may not need to remove these special characters and numbers from text.
@@ -78,7 +78,7 @@ for sen in range(0, len(X)):
 
     documents.append(document)
 ```
-####Converting Text to Numbers :
+#### Converting Text to Numbers :
 
 Different approaches exist to convert text into the corresponding numerical form. The Bag of Words Model and the Word Embedding Model 
 are two of the most commonly used approaches. But on this code , we will use the bag of words model to convert our text to numbers.
@@ -120,7 +120,7 @@ with open('outfile.txt','wb') as f:
         np.savetxt(f, line, fmt='%.2f')
 ```
 
-####Training and Testing Sets 
+#### Training and Testing Sets 
 
 Like any other supervised machine learning problem, we need to divide our data into training and testing sets. To do so, we will use the 
 train_test_split utility from the sklearn.model_selection library. Execute the following script:
@@ -129,7 +129,7 @@ The above script divides data into 20% test set and 80% training set.
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0) 
 ```
 
-####an example about train_test_split
+#### an example about train_test_split
 
 ```
 >>> import numpy as np
@@ -165,7 +165,7 @@ array([[2, 3],
 
 ```
 
-###Training Text Classification Model and Predicting Sentiment :
+### Training Text Classification Model and Predicting Sentiment :
 We have divided our data into training and testing set. Now is the time to see the real action. 
 We will use the Random Forest Algorithm to train our model. You can you use any other model of your choice.
 
@@ -179,7 +179,7 @@ classifier.fit(X_train, y_train)
 ```
 Now is the time to see the performance of the model that you just created
 
-####Evaluating the Model :
+#### Evaluating the Model :
 To evaluate the performance of a classification model such as the one that we just trained, 
 we can use metrics such as the confusion matrix, F1 measure, and the accuracy.
 To find these values, we can use classification_report, confusion_matrix, and accuracy_score utilities 
@@ -220,7 +220,7 @@ print(accuracy_score(y_test, y_pred))
 #https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html
 ```
 
-Saving and Loading the Model :
+#### Saving and Loading the Model :
 We can save our model as a pickle object in Python. To do so, execute the following script:
 
 ```
@@ -244,4 +244,4 @@ print(accuracy_score(y_test, y_pred2))
 
 
 
-__ M-AMAIRI
+                                                                                                             M-AMAIRI
